@@ -33,14 +33,7 @@ def meny():
 
 def filen():
     import csv
-
-    with open('personer.csv', 'r') as csv_file:
-        csv_reader = csv.reader(csv_file)
-
-        for line in csv_reader:
-            print(line[3])
-
-"""
+    
     f = open('personer.csv', 'r')
     
     reader = csv.reader(f)
@@ -49,11 +42,11 @@ def filen():
 
     for row in reader:
         try:
-            people.append([row[0], row[1], row[2], row[3]])
+            personer.append([row[0], row[1], row[2], row[3]])
         except:
             pass
 
     print('Här är originalfilen personer.csv')
     for item in personer:
         print(item)
-"""
+
