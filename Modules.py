@@ -1,11 +1,8 @@
-
-
 def meny():
-    val = 0
+    val =0
 
     while val != 6:
         print("""
-        Välj ett av följande alternativ
 
         1. Läs in originalfil
 
@@ -20,5 +17,23 @@ def meny():
         6. Avsluta programmet 
 
         """)
+        val = input("Välj ett av följande alternativ: ")
 
+        if val =="1":
+            print('Du har valt att läsa in Originalfilen')
+
+        elif val =="2":
+            print('Du har valt att läsa in Originalfilen')
+
+        elif val =="3":
+            print('Du har valt att läsa in Originalfilen')
+
+        elif val =="4":
+            print('Du har valt att läsa in Originalfilen')
+
+        elif val =="5":
+            print('Du har valt att läsa in Originalfilen')
+
+        elif val =="6":
+            break
 
