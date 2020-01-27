@@ -19,8 +19,7 @@ def meny():
         
         val = input("Välj ett av följande alternativ: ")
         if val =="1":
-            print('lol')
-            filen()
+            print(filen())
         elif val =="2":
             print('Du har valt att läsa in Originalfilen')
         elif val =="3":
@@ -33,16 +32,16 @@ def meny():
             break
 
 def filen():
-    import csv
+    import csv 
     
-    f = open('personer.csv')
-
-    csv_f = csv.reader(f)
-
-    for lines in csv_f:
-        print (lines[0])
-
-    f.close
+    lines = []
+    try:
+        with open('personer.csv') as csv_file:
+            for line in csv_file:
+                lines.append(line)
+            return lines
+    except FileNotFoundError as ferr:
+        print(ferr) 
 
 """
     f = open('personer.csv', 'r')
