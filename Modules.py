@@ -35,11 +35,14 @@ def meny():
 def filen():
     import csv
     
-    with open('personer.csv', 'r') as csv_file:
-        csv_reader = csv.reader(csv_file)
+    f = open('personer.csv')
 
-        for line in csv_reader:
-            print(line)
+    csv_f = csv.reader(f)
+
+    for lines in csv_f:
+        print (lines[0])
+
+    f.close
 
 """
     f = open('personer.csv', 'r')
