@@ -1,3 +1,3 @@
-from Modules import hello
+from Modules import meny
 
-hello()
+meny()
