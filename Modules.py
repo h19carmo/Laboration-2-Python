@@ -32,5 +32,9 @@ def meny():
             break
 
 def filen():
-    
+    import csv 
 
+    reader = csv.reader(
+        open('personer.csv'), delimiter=";")
+    for row in reader:
+        print(row)
