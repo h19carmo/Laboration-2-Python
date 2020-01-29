@@ -38,3 +38,14 @@ def filen():
         open('personer.csv'), delimiter=";")
     for row in reader:
         print(row)
+
+
+def Json():
+
+def läggtill():
+
+def tabort():
+
+def spara():
+
+
