@@ -32,6 +32,16 @@ def meny():
             break
 
 def filen():
+    from csv import reader
+
+    with open('personer.csv', 'r') as csvfile:
+        csv_reader = reader(csvfile)
+        for row in reader:
+            print(row)
+
+
+
+    """
     import csv 
 
     reader = csv.reader(
@@ -39,6 +49,9 @@ def filen():
     for row in reader:
         print(row)
 
+    """
+
+"""
 
 def Json():
 
@@ -47,5 +60,4 @@ def läggtill():
 def tabort():
 
 def spara():
-
-
+"""
