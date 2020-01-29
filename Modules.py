@@ -40,24 +40,3 @@ def filen():
             print(row)
 
 
-
-    """
-    import csv 
-
-    reader = csv.reader(
-        open('personer.csv'), delimiter=";")
-    for row in reader:
-        print(row)
-
-    """
-
-"""
-
-def Json():
-
-def läggtill():
-
-def tabort():
-
-def spara():
-"""
